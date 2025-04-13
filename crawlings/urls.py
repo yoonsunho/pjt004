@@ -20,7 +20,7 @@ from . import views
 app_name = 'crawlings'
 
 urlpatterns = [
-    path('', views.index, name='index'), 
+    path('index/', views.index, name='index'), 
     path('<str:company_name>/', views.detail, name='detail'),
     path('<int:pk>/delete_comment/', views.delete_comment, name='delete_comment'),
 ]
